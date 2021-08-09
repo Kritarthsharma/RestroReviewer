@@ -1,0 +1,41 @@
+{
+  "name": "RestroReviewer",
+  "version": "1.0.0",
+  "description": "Restaurant review App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js",
+    "client": "npm start --prefix client",
+    "both": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "author": "Kritarth Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.2.6",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^7.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.10",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.1",
+    "sharp": "^0.28.2",
+    "slugify": "^1.5.3",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}

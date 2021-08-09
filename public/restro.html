@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Foodies Junction</title>
+</head>
+<body>
+        <header>
+            <div class="nav">
+                <h1 class="nav__logo">
+                  <span class="nav__logo-text"><i class="fas fa-pizza-slice"></i> Foodies</span
+                  >Junction
+                </h1>
+                <h3><a href="index.html">Restaurants</a></h3>
+                <nav>
+                  <ul>
+                    <li><a class="nav__el" href="./about.html">About</a></li>
+                    <li><a class="nav__el" href="./login.html">Login</a></li>
+                    <li><a class="nav__el" href="./signup.html">Signup</a></li>
+                    <!-- <li><a class="nav__el" href="#about"><img class="nav__user-img" src="./img/user-1.jpeg" alt=""><span>Kritarth</span></a></li> -->
+                  </ul>
+                </nav>
+              </div>
+              <div class="heading">
+                  <h1><i class="fas fa-store-alt"></i> &nbsp;Chulha Chauki Da Dhaba</h1>
+                  <div class="info">
+                    <div class="info__left">
+                        <p>
+                            <span><i class="fas fa-money-bill-wave price"></i> &nbsp;Price for two $2000<span>
+                            <span>• <i class="fas fa-utensils"></i> &nbsp;North Indian</span>
+                          </p>
+                          <p><i class="fas fa-location-arrow location"></i> &nbsp;Koramangala</p>
+                      </div>
+                      <div class="info__right">
+                            <i class="fas fa-star checked2"></i>
+                            <span>4.8 / 5 (7)</span>
+                      </div>
+                  </div>
+              </div>
+        </header>
+        <section class="gallery">
+            <div class="gallery__cover">
+                <div class="gallery__slides">
+                    <img class="gallery__img" src="./img/rome3.jpg" alt="Rome" />
+                </div>
+                <div class="gallery__slides">
+                    <img class="gallery__img" src="./img/img.jpg" alt="Rome" />
+                </div>
+                <div class="gallery__slides">
+                    <img class="gallery__img" src="./img/rome2.jpg" alt="Rome" />
+                </div>
+                <div class="gallery__slides">
+                    <img class="gallery__img" src="./img/rome.jpg" alt="Rome" />
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>   
+            </div>
+            <div class="gallery__images">
+                <img class="gallery__thumbnail demo cursor" src="./img/rome3.jpg" onclick="currentSlide(1)" alt="Rome" />
+                <img class="gallery__thumbnail demo cursor" src="./img/img.jpg" onclick="currentSlide(2)" alt="Rome" />
+                <img class="gallery__thumbnail demo cursor" src="./img/rome2.jpg" onclick="currentSlide(3)" alt="Rome" />
+                <img class="gallery__thumbnail demo cursor" src="./img/rome.jpg" onclick="currentSlide(4)" alt="Rome" />
+            </div>
+        </section>
+        <section class="details">
+          <nav>
+            <div class="details__links">
+                  <h3><a class="current" href="#home">| <i class="fas fa-info-circle"></i> &nbsp;Informations</a></h3>
+                  <h3><a class="details__reviews" href="#about">| <i class="fas fa-star"></i> &nbsp;Reviews</a></h3>
+            </div>
+          </nav>
+          <section class="informations">
+            <div class="informations__opening-hours">
+              <h1>| <i class="far fa-clock"></i> &nbsp;Opening Hours</h1>
+              <p><strong>Tue-Sat</strong></p>
+              <p>7:30 PM - 11:30 PM</p>
+            </div>
+            <div class="informations__details">
+              <h1>| <i class="fas fa-info-circle"></i> &nbsp;Details</h1>
+              <h4><i class="fas fa-utensils"></i> &nbsp;Cuisine</h4>
+              <p>North Indian</p>
+              <h4><i class="fas fa-map-marker-alt"></i> &nbsp;Neighbourhood</h4>
+              <p>J.P. Nagar</p>
+            </div>
+            <div class="informations__location">
+              <h2>| <i class="fas fa-location-arrow location"></i> &nbsp;Location</h2>
+              <p>Manjunath Colony, 2nd Phase, J.P. Nagar Bengaluru, Karnataka 560041</p>
+              <h4><i class="fas fa-phone-alt"></i> &nbsp;Phone Number</h4>
+              <p>8041204283</p>
+              <h4><i class="fas fa-link"></i> &nbsp;Website</h4>
+              <a href="http://www.chulhachaukidadhaba.com/" target="_blank">http://www.chulhachaukidadhaba.com/</a> 
+            </div>
+          </section>
+          <section class="map">
+            <div class="map__container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.930535629827!2d77.5838277144564!3d12.912186119673743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae159243711583%3A0x97457415d82c2024!2sChulha%20Chauki%20Da%20Dhaba!5e0!3m2!1sen!2sin!4v1624610726479!5m2!1sen!2sin" width="1240" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </section>
+          <section class="reviews">
+            <div>
+              <div class="reviews__overall--ratings">
+                <h1>Overall Ratings</h1>
+                <p><i class="fas fa-star checked2"></i>
+                  <span>4.8 / 5</span>
+                </p>
+                <p><i class="fas fa-users"></i> &nbsp;7 Reviews </p>
+              </div>
+              <div class="reviews__user">
+                <h1>Please Write A Review...</h1>
+                <form action="" class="form reviews__user--form">
+                  <div class="star-widget">
+                    <input value="5" type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input value="4" type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input value="3" type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input value="2" type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input value="1" type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    </div>
+                    <div class="reviews__user--review">
+                      <textarea name="review" id="review" class="reviews__user--textarea" placeholder="Please write your review here!"></textarea>
+                    </div>
+                    <div class="reviews__user--btn">
+                      <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+              </div>
+              <div class="reviews__unauth">
+                <h1>Please Login/Signup to create a review...</h1>
+              </div>
+            </div>
+            <div class="restro-reviews">
+              <div class="restro-reviews__card">
+                <div class="restro-reviews__avatar">
+                  <img src="./img/user-1.jpeg" alt="User photo" class="restro-reviews__img">
+                  <h3>Kritarth Sharma</h3>
+                </div>
+                <div class="restro-reviews__ratings">
+                  <p>20/4/2021, 11:15:30 pm</p>
+                  <div>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="restro-reviews__user">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum exercitationem repudiandae quisquam praesentium magni non repellat, neque libero porro nisi tenetur ea unde a accusamus consequuntur accusantium id. Quas commodi similique dolor necessitatibus tempore temporibus eum corporis odio sed eaque nesciunt inventore quia, modi illo officia reiciendis rerum accusamus dignissimos!
+                  </p>
+                </div>
+              </div>
+              <div class="restro-reviews__card">
+                <div class="restro-reviews__avatar">
+                  <img src="./img/user-1.jpeg" alt="User photo" class="restro-reviews__img">
+                  <h3>Kritarth Sharma</h3>
+                </div>
+                <div class="restro-reviews__ratings">
+                  <p>20/4/2021, 11:15:30 pm</p>
+                  <div>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="restro-reviews__user">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum exercitationem repudiandae quisquam praesentium magni non repellat, neque libero porro nisi tenetur ea unde a accusamus consequuntur accusantium id. Quas commodi similique dolor necessitatibus tempore temporibus eum corporis odio sed eaque nesciunt inventore quia, modi illo officia reiciendis rerum accusamus dignissimos!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <footer>
+          <div class="main-content">
+            <div class="left footer-box">
+              <h2>About us</h2>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet architecto tempora consequatur ipsam asperiores ut expedita voluptatibus, quia excepturi illo saepe autem nam repellat quod totam earum, doloremque sit ipsum.</p>
+                <div class="social">
+                  <a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a>
+                  <a href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
+                  <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
+                  <a href="https://youtube.com/"><span class="fab fa-youtube"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="center footer-box">
+              <h2>Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">Bangalore, India</span>
+                </div>
+                <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">+91-123456789</span>
+                </div>
+                <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">abc@example.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="footer-right footer-box">
+              <h2>Contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                    <input type="email" required>
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="footer-btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <center>
+              <span class="credit">Created By <a href="https://kritarthsharma.herokuapp.com/">Kritarth Sharma</a> | </span>
+              <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+            </center>
+          </div>
+        </footer>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("gallery__slides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace("gallery__active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += "gallery__active";
+            }
+        </script>
+  </body>
+</html>
